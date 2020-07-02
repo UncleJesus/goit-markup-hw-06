@@ -59,13 +59,13 @@
 
     <main>
       <!-- Герой -->
-      <section class="banner">
+      <section class="hero">
         <div class="centered-banner">
           <h1 class="banner-title">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="banner-btn" data-modal-open>
+          <button class="banner-btn" data-modal-open>
             <span class="banner-btn-text">Заказать услугу</span>
           </button>
         </div>
@@ -477,8 +477,17 @@
             </div>
             <!-- Подписка -->
             <div class="subscribe-footer">
-              <h3 class="call-to-action">Подпишитесь на рассылку</h3>
-              <button>Подписаться</button>
+              
+                <h3 class="call-to-action">Подпишитесь на рассылку</h3>
+                <div class="subscribe-box">
+                <input class="footer-input" type="email" name="email" placeholder="E-mail"/>
+                <button class="input-btn"> <span class="input-btn-text">Подписаться</span> </button>
+                <svg class="footer-btn-icon">
+                  <use href="./images/footer (1).svg#icon-iconsend"></use>
+                </svg>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -490,7 +499,7 @@
     <div class="backdrop is-hiden" data-modal>
       <div class="modal">
         <form class="modal-form">
-          <button class="modal-x-btn" type="button">
+          <button class="modal-x-btn" type="button" data-modal-close>
             <svg class="modal-x-icon">
               <use href="./images/modal.svg#icon-vector4"></use>
             </svg>
@@ -506,8 +515,9 @@
               name="user-name"
               class="form-input"
               placeholder=" "
+              id="user-name"
             />
-            <label class="form-label">Имя </label>
+            <label for="user-name" class="form-label">Имя </label>
             <svg class="modal-icon">
               <use href="./images/modal.svg#icon-vector"></use>
             </svg>
@@ -518,9 +528,10 @@
               name="user-tel"
               class="form-input"
               placeholder=" "
+              id="user-tel"
             />
 
-            <label class="form-label">Телефон </label>
+            <label for="user-tel" class="form-label">Телефон </label>
             <svg class="modal-icon">
               <use href="./images/modal.svg#icon-vector2"></use>
             </svg>
@@ -531,8 +542,9 @@
               name="user-mail"
               class="form-input"
               placeholder=" "
+              id="user-email"
             />
-            <label class="form-label">Почта </label>
+            <label for="user-email" class="form-label">Почта </label>
             <svg class="modal-icon">
               <use href="./images/modal.svg#icon-vector3"></use>
             </svg>
@@ -542,7 +554,7 @@
           </div>
           <div class="form-field checkbox-box">
             <label class="checkbox-label">
-              <input class="checkbox" type="checkbox" />
+              <input class="checkbox" type="checkbox" name="checkbox" />
               <span class="checkbox-icon"></span>
               <span class="checkbox-text"
                 >Соглашаюсь с рассылкой и принимаю</span
@@ -550,7 +562,7 @@
               <a class="checkbox-link" href="">Условия договора</a>
             </label>
           </div>
-          <button class="modal-btn" type="submit" data-modal-close>
+          <button class="modal-btn" type="submit">
             <span class="modal-btn-text">Отправить</span>
           </button>
         </form>
