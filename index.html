@@ -490,6 +490,11 @@
     <div class="backdrop is-hiden" data-modal>
       <div class="modal">
         <form class="modal-form">
+          <button class="modal-x-btn" type="button">
+            <svg class="modal-x-icon">
+              <use href="./images/modal.svg#icon-vector4"></use>
+            </svg>
+          </button>
           <div class="modal-title-box">
             <span class="modal-title">
               Оставьте свои данные, мы вам перезвоним
@@ -504,7 +509,7 @@
             />
             <label class="form-label">Имя </label>
             <svg class="modal-icon">
-              <use href="./images/modal.svg#icon-Vector"></use>
+              <use href="./images/modal.svg#icon-vector"></use>
             </svg>
           </div>
           <div class="form-field">
@@ -517,7 +522,7 @@
 
             <label class="form-label">Телефон </label>
             <svg class="modal-icon">
-              <use href="./images/modal.svg#icon-Vector2"></use>
+              <use href="./images/modal.svg#icon-vector2"></use>
             </svg>
           </div>
           <div class="form-field">
@@ -536,8 +541,9 @@
             <textarea name="" id="" placeholder="Комментарий"></textarea>
           </div>
           <div class="form-field checkbox-box">
-            <label class="">
-              <input type="checkbox" />
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" />
+              <span class="checkbox-icon"></span>
               <span class="checkbox-text"
                 >Соглашаюсь с рассылкой и принимаю</span
               >
@@ -550,6 +556,6 @@
         </form>
       </div>
     </div>
-    <script src="../js/modal.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
