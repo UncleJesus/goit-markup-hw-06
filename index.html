@@ -489,9 +489,60 @@
     <!-- MODAL -->
     <div class="backdrop is-hiden" data-modal>
       <div class="modal">
-        <button data-modal-close><span>Отправить</span></button>
+        <form class="modal-form">
+          <div class="modal-title-box">
+            <span class="modal-title">
+              Оставьте свои данные, мы вам перезвоним
+            </span>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              <input
+                type="text"
+                name="user-name"
+                class="modal-data"
+                placeholder="Имя"
+              />
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-data"
+                placeholder="Телефон"
+              />
+            </label>
+          </div>
+          <div class="form-field">
+            <label class="form-label">
+              <input
+                type="email"
+                name="user-mail"
+                class="modal-data"
+                placeholder="Почта"
+              />
+            </label>
+          </div>
+          <div class="form-field">
+            <textarea name="" id="" placeholder="Комментарий"></textarea>
+          </div>
+          <div class="form-field checkbox-box">
+            <label class="form-label">
+              <input type="checkbox" />
+              <span class="checkbox-text"
+                >Соглашаюсь с рассылкой и принимаю</span
+              >
+              <a class="checkbox-link" href="">Условия договора</a>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit" data-modal-close>
+            <span class="modal-btn-text">Отправить</span>
+          </button>
+        </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
