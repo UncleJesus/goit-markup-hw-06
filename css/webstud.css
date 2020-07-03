@@ -377,8 +377,8 @@
 
 .modal-x-btn {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 8px;
+  top: 8px;
   border-radius: 50%;
   width: 30px;
   height: 30px;
