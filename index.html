@@ -477,16 +477,20 @@
             </div>
             <!-- Подписка -->
             <div class="subscribe-footer">
-              
-                <h3 class="call-to-action">Подпишитесь на рассылку</h3>
-                <div class="subscribe-box">
-                <input class="footer-input" type="email" name="email" placeholder="E-mail"/>
-                <button class="input-btn"> <span class="input-btn-text">Подписаться</span> </button>
+              <h3 class="call-to-action">Подпишитесь на рассылку</h3>
+              <div class="subscribe-box">
+                <input
+                  class="footer-input"
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                />
+                <button class="input-btn">
+                  <span class="input-btn-text">Подписаться</span>
+                </button>
                 <svg class="footer-btn-icon">
                   <use href="./images/footer (1).svg#icon-iconsend"></use>
                 </svg>
-
-                </div>
               </div>
             </div>
           </div>
@@ -496,7 +500,7 @@
     </footer>
 
     <!-- MODAL -->
-    <div class="backdrop is-hiden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form class="modal-form">
           <button class="modal-x-btn" type="button" data-modal-close>
@@ -568,6 +572,21 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        const refs = {
+          openModalBtn: document.querySelector("[data-modal-open]"),
+          closeModalBtn: document.querySelector("[data-modal-close]"),
+          modal: document.querySelector("[data-modal]"),
+        };
+
+        refs.openModalBtn.addEventListener("click", toggleModal);
+        refs.closeModalBtn.addEventListener("click", toggleModal);
+
+        function toggleModal() {
+          refs.modal.classList.toggle("is-hidden");
+        }
+      })();
+    </script>
   </body>
 </html>
