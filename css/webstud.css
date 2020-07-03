@@ -464,7 +464,7 @@ textarea:focus {
   transition: transform 250ms linear, color 250ms linear;
 }
 textarea:focus + .coment-label,
-textarea:not(:placeholder-shown) + .comen-label {
+textarea:not(:placeholder-shown) + .coment-label {
   color: #2196f3;
   transform: translate(-10px, -30px);
 }
